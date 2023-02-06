@@ -1,12 +1,14 @@
 {
-  "name": "next-animals",
+  "name": "nextjs-animals",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "migrate:up": "ley up",
+    "migrate:down": "ley down"
   },
   "dependencies": {
     "@next/font": "13.1.6",
@@ -16,8 +18,15 @@
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
     "next": "13.1.6",
+    "postgres": "^3.3.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "sass": "^1.58.0",
     "typescript": "4.9.5"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "ley": "^0.8.1",
+    "pg-connection-string": "^2.5.0"
   }
 }
